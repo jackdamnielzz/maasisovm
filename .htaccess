@@ -98,10 +98,16 @@ ErrorDocument 404 /error_docs/not_found.html
 ErrorDocument 403 /error_docs/forbidden.html
 ErrorDocument 500 /error_docs/internal_server_error.html
 
-# Redirect www to non-www (uncomment if needed)
-# RewriteEngine On
-# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Ensure CSS files are properly served
+<FilesMatch "\.css$">
+    ForceType text/css
+    Header set Content-Type "text/css"
+</FilesMatch>
 
 # Force HTTPS (uncomment if you have SSL)
 # RewriteEngine On
