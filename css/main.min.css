@@ -136,6 +136,17 @@ footer {
     }
 }
 
+/* Override animations for hero section */
+#hero .fade-in,
+.hero .fade-in,
+#hero *,
+.hero * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
 /* Cookie Banner */
 .cookie-banner {
     position: fixed;
