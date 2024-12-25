@@ -22,3 +22,11 @@ The website appears to be a business website for "Maasiso" offering services rel
 ## Sitemap and Robots.txt
 
 Based on this analysis, a new `sitemap.xml` file was created, listing all the main pages of the website. A new `robots.txt` file was also created, disallowing access to the `error_docs` and `cline_docs` directories, and including the sitemap location.
+
+## HTML Structure and Schema
+
+The `index.html` file was updated to include the following:
+
+-   Added more specific schema.org properties to the existing `Organization` schema, such as `logo`, `address`, and `telephone`.
+-   Improved semantic HTML structure by wrapping the main content in a `<main>` element and using `<article>` elements for the sections.
+-   Added ARIA attributes to improve accessibility.
