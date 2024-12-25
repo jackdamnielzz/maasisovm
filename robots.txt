@@ -1,6 +1,4 @@
 User-agent: *
-Allow: /
 Disallow: /error_docs/
-Disallow: /sitemap.xml
-
+Disallow: /cline_docs/
 Sitemap: https://maasiso.nl/sitemaps/sitemap.xml
