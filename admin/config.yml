@@ -3,109 +3,14 @@ backend:
   repo: jackdamnielzz/maasisovm
   branch: master
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: static/images
+public_folder: /images
 
 collections:
-  - name: "pages"
-    label: "Pagina's"
-    folder: "content/pages"
+  - name: pages
+    label: Pages
+    folder: content/pages
     create: true
-    slug: "{{slug}}"
     fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Publicatie Datum", name: "date", widget: "datetime"}
-      - {label: "Laatst Bijgewerkt", name: "lastmod", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image", required: false}
-
-  - name: "diensten"
-    label: "Diensten"
-    folder: "content/services"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Icon", name: "icon", widget: "image", required: true}
-      - {label: "Volgorde", name: "weight", widget: "number", default: 1}
-      - {label: "Featured", name: "featured", widget: "boolean", default: false}
-
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Publicatie Datum", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image", required: true}
-      - {label: "Categorieën", name: "categories", widget: "list"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Auteur", name: "author", widget: "string"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-
-  - name: "settings"
-    label: "Instellingen"
-    files:
-      - name: "general"
-        label: "Site Instellingen"
-        file: "content/settings/general.yml"
-        fields:
-          - {label: "Site Naam", name: "site_name", widget: "string"}
-          - {label: "Site Beschrijving", name: "site_description", widget: "text"}
-          - {label: "Site Keywords", name: "site_keywords", widget: "string"}
-          - {label: "Site Logo", name: "site_logo", widget: "image"}
-          - label: "Social Media"
-            name: "social"
-            widget: "object"
-            fields:
-              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
-              - {label: "Twitter", name: "twitter", widget: "string", required: false}
-              - {label: "Facebook", name: "facebook", widget: "string", required: false}
-          - label: "Contact Info"
-            name: "contact"
-            widget: "object"
-            fields:
-              - {label: "Email", name: "email", widget: "string"}
-              - {label: "Telefoon", name: "phone", widget: "string"}
-              - {label: "Adres", name: "address", widget: "text"}
-
-  - name: "menu"
-    label: "Menu's"
-    files:
-      - name: "main"
-        label: "Hoofdmenu"
-        file: "content/settings/main_menu.yml"
-        fields:
-          - label: "Menu Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "Label", name: "label", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-              - {label: "Volgorde", name: "weight", widget: "number", default: 1}
-              - label: "Submenu Items"
-                name: "items"
-                widget: "list"
-                required: false
-                fields:
-                  - {label: "Label", name: "label", widget: "string"}
-                  - {label: "URL", name: "url", widget: "string"}
-                  - {label: "Volgorde", name: "weight", widget: "number", default: 1}
-
-      - name: "footer"
-        label: "Footer Menu"
-        file: "content/settings/footer_menu.yml"
-        fields:
-          - label: "Menu Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "Label", name: "label", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-              - {label: "Volgorde", name: "weight", widget: "number", default: 1}
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }

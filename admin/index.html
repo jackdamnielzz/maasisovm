@@ -1,117 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MaasISO Content Management</title>
-    <!-- Include Decap CMS -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" defer></script>
-    <script>
-      // Initialize the CMS after the script has loaded
-      document.addEventListener('DOMContentLoaded', function() {
-        // Configure CMS to use config.yml from admin directory
-        window.CMS_MANUAL_INIT = true;
-        CMS.init({
-          config: {
-            load_config_file: false,
-            backend: {
-              name: "github",
-              repo: "jackdamnielzz/maasisovm",
-              branch: "master"
-            },
-            media_folder: "static/images",
-            public_folder: "/images",
-            collections: [
-              {
-                name: "pages",
-                label: "Pagina's",
-                folder: "content/pages",
-                create: true,
-                slug: "{{slug}}",
-                fields: [
-                  {label: "Titel", name: "title", widget: "string"},
-                  {label: "SEO Beschrijving", name: "description", widget: "text"},
-                  {label: "Content", name: "body", widget: "markdown"},
-                  {label: "Publicatie Datum", name: "date", widget: "datetime"},
-                  {label: "Laatst Bijgewerkt", name: "lastmod", widget: "datetime"},
-                  {label: "Featured Image", name: "image", widget: "image", required: false}
-                ]
-              },
-              {
-                name: "diensten",
-                label: "Diensten",
-                folder: "content/services",
-                create: true,
-                slug: "{{slug}}",
-                fields: [
-                  {label: "Titel", name: "title", widget: "string"},
-                  {label: "SEO Beschrijving", name: "description", widget: "text"},
-                  {label: "Content", name: "body", widget: "markdown"},
-                  {label: "Icon", name: "icon", widget: "image", required: true},
-                  {label: "Volgorde", name: "weight", widget: "number", default: 1},
-                  {label: "Featured", name: "featured", widget: "boolean", default: false}
-                ]
-              },
-              {
-                name: "blog",
-                label: "Blog",
-                folder: "content/blog",
-                create: true,
-                slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-                fields: [
-                  {label: "Titel", name: "title", widget: "string"},
-                  {label: "SEO Beschrijving", name: "description", widget: "text"},
-                  {label: "Content", name: "body", widget: "markdown"},
-                  {label: "Publicatie Datum", name: "date", widget: "datetime"},
-                  {label: "Featured Image", name: "image", widget: "image", required: true},
-                  {label: "Categorieën", name: "categories", widget: "list"},
-                  {label: "Tags", name: "tags", widget: "list"},
-                  {label: "Auteur", name: "author", widget: "string"},
-                  {label: "Draft", name: "draft", widget: "boolean", default: true}
-                ]
-              }
-            ]
-          }
-        });
-      });
-    </script>
-    <style>
-      /* Custom styling voor de admin interface */
-      :root {
-        --primary-color: #007bff;
-        --secondary-color: #6c757d;
-      }
-      
-      /* Verbeter de leesbaarheid van de admin interface */
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-      }
-
-      /* Style de header */
-      [class*="AppHeader"] {
-        background-color: var(--primary-color);
-      }
-
-      /* Style de knoppen */
-      [class*="Button"] {
-        background-color: var(--primary-color);
-        border-radius: 4px;
-      }
-
-      /* Hover effecten */
-      [class*="Button"]:hover {
-        background-color: var(--secondary-color);
-      }
-
-      /* Preview pane styling */
-      [class*="PreviewPaneFrame"] {
-        background-color: #fff;
-        border-left: 1px solid #e9ecef;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Decap CMS wordt automatisch geïnitialiseerd -->
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaasISO Content Management</title>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
 </html>
