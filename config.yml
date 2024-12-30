@@ -31,9 +31,8 @@ collections:
           name: "body",
           widget: "markdown",
           sanitize_preview: true,
-          editor_components: ["image", "code-block"],
-          buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"],
-          default_language: "html",
+          editor_components: ["image"],
+          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code-block"],
           modes: ["raw", "rich_text"],
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
@@ -54,9 +53,8 @@ collections:
           name: "body",
           widget: "markdown",
           sanitize_preview: true,
-          editor_components: ["image", "code-block"],
-          buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"],
-          default_language: "html",
+          editor_components: ["image"],
+          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code-block"],
           modes: ["raw", "rich_text"],
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
