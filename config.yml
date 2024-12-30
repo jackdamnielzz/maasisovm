@@ -26,7 +26,7 @@ collections:
     fields:
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown", sanitize_preview: true, editor_components: ["image", "code-block"], buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]}
       - {label: "Publicatie Datum", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "image", widget: "image", required: false}
 
@@ -39,7 +39,7 @@ collections:
     fields:
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown", sanitize_preview: true, editor_components: ["image", "code-block"], buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]}
       - {label: "Icon", name: "icon", widget: "image", required: true}
       - {label: "Volgorde", name: "weight", widget: "number", default: 1}
 
