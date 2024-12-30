@@ -2,10 +2,9 @@ backend:
   name: github
   repo: jackdamnielzz/maasisovm
   branch: master
-  base_url: https://api.github.com
-  auth_endpoint: auth
+  auth_endpoint: oauth
+  site_domain: localhost:50242
   client_id: Ov23licrdQC7mQor8i2b
-  auth_type: implicit
 
 # Media and public assets
 media_folder: static/images
