@@ -34,6 +34,20 @@ collections:
           editor_components: ["image"],
           buttons: ["bold", "italic", "code", "link", "bulleted-list", "numbered-list", "heading-one", "heading-two", "heading-three", "quote"],
           modes: ["raw", "rich_text"],
+          default_language: "html",
+          editor_preview: true,
+          format: true,
+          sanitize_preview: true,
+          toolbar_buttons: {
+            link: {
+              required_fields: ["url", "title"],
+              default_protocol: "https://"
+            },
+            code: {
+              parse_mode: "fenced",
+              default_language: "html"
+            }
+          },
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
       - {label: "Publicatie Datum", name: "date", widget: "datetime"}
@@ -56,6 +70,20 @@ collections:
           editor_components: ["image"],
           buttons: ["bold", "italic", "code", "link", "bulleted-list", "numbered-list", "heading-one", "heading-two", "heading-three", "quote"],
           modes: ["raw", "rich_text"],
+          default_language: "html",
+          editor_preview: true,
+          format: true,
+          sanitize_preview: true,
+          toolbar_buttons: {
+            link: {
+              required_fields: ["url", "title"],
+              default_protocol: "https://"
+            },
+            code: {
+              parse_mode: "fenced",
+              default_language: "html"
+            }
+          },
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
       - {label: "Icon", name: "icon", widget: "image", required: true}
