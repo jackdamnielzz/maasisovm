@@ -26,7 +26,17 @@ collections:
     fields:
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown", sanitize_preview: true, editor_components: ["image", "code-block"], buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]}
+      - {
+          label: "Content",
+          name: "body",
+          widget: "markdown",
+          sanitize_preview: true,
+          editor_components: ["image", "code-block"],
+          buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"],
+          default_language: "html",
+          modes: ["raw", "rich_text"],
+          editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
+        }
       - {label: "Publicatie Datum", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "image", widget: "image", required: false}
 
@@ -39,7 +49,17 @@ collections:
     fields:
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SEO Beschrijving", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown", sanitize_preview: true, editor_components: ["image", "code-block"], buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]}
+      - {
+          label: "Content",
+          name: "body",
+          widget: "markdown",
+          sanitize_preview: true,
+          editor_components: ["image", "code-block"],
+          buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"],
+          default_language: "html",
+          modes: ["raw", "rich_text"],
+          editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
+        }
       - {label: "Icon", name: "icon", widget: "image", required: true}
       - {label: "Volgorde", name: "weight", widget: "number", default: 1}
 
