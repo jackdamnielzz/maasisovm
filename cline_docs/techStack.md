@@ -1,105 +1,154 @@
-# MaasISO Website Technologie Stack
+# MaasISO Website Technology Stack
 
-## Huidige Stack
+## Core Technologies
+
+### Frontend
 - HTML5
-- CSS3 (vanilla CSS, geen preprocessor)
-- JavaScript (ES6+, vanilla JS)
-- Git voor versiebeheer
-- GitHub Pages voor hosting
+- CSS3 (vanilla CSS)
+- JavaScript (ES6+)
+- Markdown voor content
 
-## Frontend Features
+### Content Management
+- Decap CMS (voorheen Netlify CMS)
+  - Git-based workflow
+  - Markdown content
+  - Media bibliotheek
+  - Real-time preview
+  - User-friendly interface
+  - Zero-cost hosting
+  - Werkt met bestaande hosting
 
-### Bestaand
-- Vanilla HTML/CSS/JS
-- Component-gebaseerde structuur
-- Responsive design
+### Version Control
+- Git voor content & code versioning
+  - Automatische backups
+  - Content history
+  - Rollback mogelijkheden
+  - Collaborative workflow
 
-### Cookie Management Systeem
-- Vanilla JavaScript cookie consent manager
-- Modulair ontwerp
-- Configureerbare cookie types:
-  - Noodzakelijke cookies
-  - Analytische cookies (Google Analytics)
-  - Functionele cookies
-- Features:
-  - Consent opslag (1 jaar)
-  - Granulaire cookie controle
-  - Settings modal
-  - Responsive design
-  - Toegankelijkheid
+## Development Tools
 
-### Nieuwe Features (Gepland)
-- Dynamisch content laden
-- Client-side routing
-- Content caching
-- Lazy loading voor media
-
-## Voorgestelde CMS Integratie
-
-### Primaire Optie: Headless CMS
-- Strapi
-  - Node.js gebaseerd
-  - Open-source
-  - Flexibel content model
-  - RESTful API
-  - GraphQL ondersteuning
-  - Zelf te hosten
-
-Voordelen:
-- Gebruiksvriendelijke admin interface
-- Aanpasbare content types
-- Uitgebreide API mogelijkheden
-- Sterke beveiliging
-- Active community
-
-### Alternatieve Opties
-1. WordPress (headless mode)
-   - Bekend admin interface
-   - Groot ecosysteem
-   - WordPress REST API
-
-2. NetlifyCMS
-   - Git-gebaseerd
-   - Markdown files
-   - Eenvoudige setup
-
-## Backend Vereisten
-
-### API Laag
-- RESTful endpoints
-- Content type definities
-- Media handling
-- Authenticatie
-
-### Database
-- Document-based storage
-- Content relaties
-- Media assets beheer
-
-## Content Hub Architectuur
-- Nieuws systeem
-- Blog platform
-- Whitepapers repository
-- Kennisbank
-- Zoekfunctionaliteit
-- Categorisatie systeem
-
-## Prestaties en SEO
-- Statische site generatie
-- CDN integratie
-- Cache management
-- Meta tags optimalisatie
-
-## Ontwikkeltools
+### Development Environment
 - VS Code als primaire editor
+- Live Server voor lokale ontwikkeling
+- Markdown preview
+- Git integratie
+- ESLint voor code kwaliteit
+- Prettier voor code formatting
+
+### Build Tools
+- PostCSS voor CSS optimalisatie
+- ImageMin voor afbeelding optimalisatie
+- HTML minificatie
+- Markdown naar HTML conversie
+
+## Infrastructure
+
+### Development
+- Lokale development server
 - Git voor versiebeheer
-- GitHub voor repository hosting
+- Markdown preview
+- Hot reloading voor snelle ontwikkeling
 
-## Beveiliging
-- Cookie consent management
-- SSL certificaat
-- API authenticatie
-- CSRF bescherming
-- Rate limiting
+### Production
+- Cloud86 Webhosting
+- Git-based content management
+- CDN voor static assets
+- SSL/TLS encryptie
 
-Deze tech stack combineert de bestaande lichtgewicht aanpak met moderne content management mogelijkheden, waarbij de focus ligt op gebruiksgemak voor content beheerders zonder in te leveren op prestaties of beveiliging.
+## CMS Features
+
+### Content Management
+- Decap CMS Admin Panel
+  - Intuïtieve Markdown editor
+  - Real-time preview
+  - Media bibliotheek
+  - Version control
+  - Draft systeem
+  - User-friendly interface
+
+### Media Management
+- Git-based media storage
+- Automatische image optimalisatie
+- Responsive images
+- Asset versioning
+- Efficiënte uploads
+
+## Security
+
+### Authentication
+- Git-based authenticatie
+- OAuth integratie
+- Role-based toegang
+- Veilige content updates
+
+### Data Protection
+- SSL/TLS encryptie
+- Git security
+- Backup via Git history
+- Version control
+
+## Performance
+
+### Caching
+- Browser caching
+- CDN caching
+- Static asset caching
+- Git-based content delivery
+
+### Optimalisatie
+- Static site generation
+- Asset minificatie
+- Image optimalisatie
+- Gzip compressie
+
+## Content Workflow
+
+### Local Development
+- Markdown editing
+- Git versiebeheer
+- Real-time preview
+- Branch-based development
+
+### Content Management
+- Git-based workflow
+- Branch voor content updates
+- Preview voor wijzigingen
+- Eenvoudige rollbacks
+
+### Production
+- Git-based deployments
+- Zero-downtime updates
+- Automatische backups
+- Performance monitoring
+
+## Integration Points
+
+### Fixed Components
+- Header component
+- Footer component
+- Navigation system
+- Cookie banner
+- Scroll-to-top button
+
+### Content Components
+- Markdown content blocks
+- Media galerijen
+- Forms
+- Dynamic sections
+- Widget zones
+
+## Testing
+
+### Content Testing
+- Markdown preview
+- Mobile preview
+- Cross-browser testing
+- Performance testing
+
+### Deployment Testing
+- Pre-deployment checks
+- Post-deployment validatie
+- Content integriteit
+- Link validatie
+
+Deze tech stack is specifiek samengesteld om de Payload CMS implementatie te ondersteunen terwijl de bestaande website functionaliteit behouden blijft. De focus ligt op schaalbaarheid, onderhoudbaarheid en performance. Payload CMS is gekozen vanwege de TypeScript support, flexibele configuratie mogelijkheden, en uitstekende developer experience.

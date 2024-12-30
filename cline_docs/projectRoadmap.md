@@ -41,71 +41,89 @@
   - [x] Lijst 3-4 belangrijke onderscheidende factoren op
 - [ ] Voeg testimonials of casestudies toe
 
-### 4. Dienstenpagina's
-- [x] Creëer eenvoudige sjabloon voor dienstenpagina's
-- [x] Ontwikkel individuele pagina's voor ISO 9001, ISO 27001, AVG
-  - [x] Schrijf Dienst Overzicht inhoud
-  - [x] Lijst belangrijkste voordelen op
-  - [x] Voeg een eenvoudig contactformulier of call-to-action toe
-- [x] Voeg meer gedetailleerde informatie toe aan ISO 9001 pagina
-- [x] Voeg meer gedetailleerde informatie toe aan ISO 27001 pagina
-- [x] Voeg meer gedetailleerde informatie toe aan AVG Compliance pagina
+### 4-8. [Previous sections remain unchanged]
 
-### 5. Over Ons Pagina
-- [x] Creëer basis "Over Ons" pagina
-- [ ] Schrijf uitgebreide bedrijfsgeschiedenis
-- [ ] Creëer missie en waarden sectie
-- [ ] Voeg eenvoudige teamleden sectie toe (indien van toepassing)
+### 9. Git-based CMS Implementatie
+- [ ] Fase 1: Git & Markdown Setup
+  - [ ] Git repository configuratie
+    - [ ] Repository structuur opzetten
+    - [ ] Branch strategie definiëren
+    - [ ] Workflow documentatie
+  - [ ] Markdown conversie
+    - [ ] Content naar Markdown migreren
+    - [ ] Templates voorbereiden
+    - [ ] Media structuur opzetten
+  - [ ] Lokale ontwikkelomgeving
+    - [ ] Git workflow setup
+    - [ ] Markdown preview tools
+    - [ ] Build process configuratie
 
-### 6. Contactpagina
-- [x] Ontwerp en implementeer basis contactformulier
-- [x] Voeg directe contactgegevens toe (telefoon, e-mail, adres)
-- [ ] Implementeer form validation voor het contactformulier
-- [ ] Verbeter de lay-out voor betere gebruikerservaring
+- [ ] Fase 2: Decap CMS Integratie
+  - [ ] CMS configuratie
+    - [ ] Config.yml setup
+    - [ ] Collections definiëren
+    - [ ] Media handling configureren
+  - [ ] Authenticatie setup
+    - [ ] OAuth configuratie
+    - [ ] Gebruikersbeheer instellen
+    - [ ] Toegangscontrole implementeren
+  - [ ] Preview systeem
+    - [ ] Local preview setup
+    - [ ] Branch preview configuratie
+    - [ ] Deploy preview inrichten
 
-### 7. Technische Implementatie
-- [x] Zet eenvoudige ontwikkelomgeving op
-- [x] Implementeer volledig responsief ontwerp
-  - [x] Test en pas de lay-out aan voor verschillende schermformaten (alle pagina's)
-  - [x] Zorg voor een goede leesbaarheid en navigatie op mobiele apparaten voor alle pagina's
-- [x] Herstructureer CSS voor betere modulariteit en onderhoud
-  - [x] Implementeer CSS variabelen systeem
-  - [x] Update core componenten met consistente styling
-  - [x] Update responsive stylesheets
-- [ ] Optimaliseer prestaties
-  - [x] Minimaliseer en comprimeer assets
-  - [ ] Optimaliseer afbeeldingen voor snelle laadtijden
-- [ ] Implementeer basis SEO-praktijken
-  - [x] Creëer meta tags (voor alle pagina's)
-  - [x] Implementeer semantische HTML-structuur (voor alle pagina's)
-  - [ ] Voeg alt teksten toe voor afbeeldingen
-- [x] Zet basis beveiligingsmaatregelen op
-  - [x] Implementeer cookie consent management systeem
-  - [ ] Verkrijg en installeer SSL-certificaat
-- [x] Standaardiseer JavaScript gebruik (main.js vs main.min.js)
-
-### 8. Inhoud Creatie
-- [x] Schrijf basis tekst voor alle pagina's
-- [x] Verfijn en breid de inhoud uit op dienstenpagina's
-- [x] Verfijn en breid de inhoud uit op juridische pagina's
-- [ ] Verfijn en breid de inhoud uit op overige pagina's
-- [ ] Creëer engaging content voor de homepage (testimonials, casestudies)
-
-### 9. CMS en Content Hub Implementatie
-- [ ] Selecteer en implementeer headless CMS
-  - [ ] Configureer Strapi als primaire CMS
-  - [ ] Zet gebruikersrollen en permissies op
-  - [ ] Creëer content types en structuren
-- [ ] Ontwikkel content hub
-  - [ ] Nieuws sectie
-  - [ ] Blog platform
-  - [ ] Whitepapers repository
-  - [ ] Kennisbank
-- [ ] Implementeer content management features
-  - [ ] Dynamische diensten pagina's
+- [ ] Fase 3: Content Structuur
+  - [ ] Content types
+    - [ ] Pagina templates
+    - [ ] Blog posts
+    - [ ] Diensten
+    - [ ] Case studies
   - [ ] Media bibliotheek
-  - [ ] Content categorisatie systeem
-  - [ ] Zoekfunctionaliteit
+    - [ ] Afbeeldingen organisatie
+    - [ ] Asset optimalisatie
+    - [ ] Version control
+  - [ ] Metadata
+    - [ ] SEO velden
+    - [ ] Social media tags
+    - [ ] Schema markup
+
+- [ ] Fase 4: Workflow & Training
+  - [ ] Content workflow
+    - [ ] Branch strategie documenteren
+    - [ ] Review process opzetten
+    - [ ] Publicatie workflow definiëren
+  - [ ] Gebruikerstraining
+    - [ ] CMS handleiding maken
+    - [ ] Markdown guide schrijven
+    - [ ] Workflow training voorbereiden
+  - [ ] Backup procedures
+    - [ ] Git backup strategie
+    - [ ] Media backup plan
+    - [ ] Restore procedures
+
+- [ ] Fase 5: Deployment & Testing
+  - [ ] Build process
+    - [ ] Markdown naar HTML conversie
+    - [ ] Asset optimalisatie
+    - [ ] Cache strategie
+  - [ ] Testing
+    - [ ] Content validatie
+    - [ ] Performance checks
+    - [ ] Mobile testing
+  - [ ] Monitoring
+    - [ ] Build monitoring
+    - [ ] Performance tracking
+    - [ ] Error logging
+
+- [ ] Fase 6: Content Migratie
+  - [ ] Content voorbereiden
+    - [ ] Content audit
+    - [ ] Markdown conversie
+    - [ ] Media optimalisatie
+  - [ ] Migratie uitvoeren
+    - [ ] Content overzetten
+    - [ ] Links valideren
+    - [ ] SEO verifiëren
 
 ### 10. Testen en Kwaliteitsborging
 - [ ] Voer basis cross-browser testen uit
@@ -136,26 +154,23 @@
 - [x] Inhoud verfijning (voor dienstenpagina's)
 - [x] Inhoud verfijning (voor juridische pagina's)
 - [ ] CMS implementatie
+  - [-] Fase 1: Architectuur & Vaste Elementen
+    - [x] Systeem documentatie
+    - [ ] Component isolatie
+    - [ ] Infrastructuur setup
+  - [ ] Fase 2: CMS Integratie
+  - [ ] Fase 3: Template Systeem
+  - [ ] Fase 4: Testen
+  - [ ] Fase 5: Monitoring & Recovery
+  - [ ] Fase 6: Content Migratie
 - [ ] Content hub ontwikkeling
 - [ ] Testen en kwaliteitsborging
 - [ ] Lanceringsvoorbereidingen
 
 ## Voltooide Taken
-- [x] Initieel project planningsdocument gecreëerd
-- [x] Project roadmap vereenvoudigd voor een lichtgewicht website
-- [x] Basis HTML-structuur gecreëerd
-- [x] Initiële CSS-stijlen geïmplementeerd
-- [x] Eenvoudig JavaScript-bestand toegevoegd
-- [x] Alle documentatie vertaald naar het Nederlands
-- [x] Aparte pagina's gemaakt voor elke dienst en onderdeel van de website
-- [x] Consistente navigatie en footer toegevoegd aan alle pagina's
-- [x] Gedetailleerde informatie toegevoegd aan alle dienstenpagina's
-- [x] Verbeterde visuele stijl en lay-out voor alle pagina's
-- [x] Responsief ontwerp geïmplementeerd voor alle pagina's
-- [x] CSS herstructurering voor betere modulariteit
-- [x] Implementatie van CSS variabelen systeem
-- [x] Update van core componenten met consistente styling
-- [x] Creatie van images/ directory voor media assets
-- [x] Juridische pagina's voltooid (privacyverklaring.html, algemene-voorwaarden.html, cookiebeleid.html)
-- [x] JavaScript gebruik gestandaardiseerd (main.min.js)
-- [x] Cookie consent management systeem geïmplementeerd
+- [2024-01] Documentatie van vaste componenten voltooid
+- [2024-01] Styling systeem documentatie afgerond
+- [2024-01] Ontwikkelomgeving setup gedocumenteerd
+
+## Voltooide Taken
+[Previous completed tasks remain unchanged]

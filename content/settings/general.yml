@@ -1,0 +1,34 @@
+site_name: "MaasISO"
+site_description: "Uw betrouwbare partner voor ISO-certificering en compliance. Specialisten in ISO 9001, ISO 27001 en AVG compliance."
+site_keywords: "ISO certificering, ISO 9001, ISO 27001, AVG compliance, GDPR, kwaliteitsmanagement, informatiebeveiliging"
+site_logo: "/images/logo.svg"
+
+social:
+  linkedin: "https://www.linkedin.com/company/maasiso"
+  twitter: "https://twitter.com/maasiso"
+  facebook: ""
+
+contact:
+  email: "info@maasiso.nl"
+  phone: ""
+  address: ""
+
+footer_text: "© 2024 MaasISO. Alle rechten voorbehouden."
+
+menu_items:
+  - label: "Home"
+    url: "/"
+  - label: "Diensten"
+    url: "/diensten"
+  - label: "Over Ons"
+    url: "/over-ons"
+  - label: "Contact"
+    url: "/contact"
+
+legal_links:
+  - label: "Privacyverklaring"
+    url: "/privacyverklaring"
+  - label: "Algemene Voorwaarden"
+    url: "/algemene-voorwaarden"
+  - label: "Cookiebeleid"
+    url: "/cookiebeleid"
