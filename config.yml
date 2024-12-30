@@ -1,12 +1,15 @@
 backend:
   name: git-gateway
   branch: master
+  site_url: https://famous-kelpie-39eeb1.netlify.app
   commit_messages:
     create: 'Create {{collection}} "{{slug}}"'
     update: 'Update {{collection}} "{{slug}}"'
     delete: 'Delete {{collection}} "{{slug}}"'
     uploadMedia: 'Upload "{{path}}"'
     deleteMedia: 'Delete "{{path}}"'
+
+local_backend: true
 
 # Media and public assets
 media_folder: static/images
