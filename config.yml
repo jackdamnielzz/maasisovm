@@ -32,7 +32,7 @@ collections:
           widget: "markdown",
           sanitize_preview: true,
           editor_components: ["image"],
-          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code-block"],
+          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code"],
           modes: ["raw", "rich_text"],
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
@@ -54,7 +54,7 @@ collections:
           widget: "markdown",
           sanitize_preview: true,
           editor_components: ["image"],
-          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code-block"],
+          buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list", "code"],
           modes: ["raw", "rich_text"],
           editor_css: ".nc-controlPane-widget { min-height: 400px; } .nc-controlPane-widget .CodeMirror { height: auto; } .nc-controlPane-widget .CodeMirror-scroll { min-height: 400px; }"
         }
