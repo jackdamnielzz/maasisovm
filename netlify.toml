@@ -1,0 +1,27 @@
+[build]
+  publish = "/"
+  command = "# no build command needed"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+[dev]
+  command = "npx serve"
+  targetPort = 3000
+  port = 8888
+  publish = "/"
+
+# Enable Git Gateway for content management
+[git-gateway]
+  accept_roles = ["admin", "editor"]
