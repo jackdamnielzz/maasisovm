@@ -2,15 +2,57 @@ backend:
   name: github
   repo: jackdamnielzz/maasisovm
   branch: master
+  base_url: https://api.github.com
+  auth_endpoint: auth
+  client_id: Ov23licrdQC7mQor8i2b
+  auth_type: implicit
 
+# Media and public assets
 media_folder: static/images
 public_folder: /images
 
+# Collections
 collections:
+  # Pages collection
   - name: pages
-    label: Pages
+    label: Pagina's
     folder: content/pages
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Body, name: body, widget: markdown }
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "SEO Beschrijving", name: "description", widget: "text"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Publicatie Datum", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+
+  # Services collection
+  - name: services
+    label: Diensten
+    folder: content/services
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "SEO Beschrijving", name: "description", widget: "text"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Icon", name: "icon", widget: "image", required: true}
+      - {label: "Volgorde", name: "weight", widget: "number", default: 1}
+
+  # Settings collection
+  - name: settings
+    label: Instellingen
+    files:
+      - name: general
+        label: Algemene Instellingen
+        file: content/settings/general.yml
+        fields:
+          - {label: "Site Naam", name: "site_name", widget: "string"}
+          - {label: "Site Beschrijving", name: "site_description", widget: "text"}
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Telefoon", name: "phone", widget: "string"}
+              - {label: "Adres", name: "address", widget: "text"}
